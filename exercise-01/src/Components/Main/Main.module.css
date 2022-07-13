@@ -1,0 +1,6 @@
+.main-section {
+  background-color: blue;
+  display: grid;
+  justify-items: center;
+  grid-template-rows: max-content repeat(3, 1fr);
+}

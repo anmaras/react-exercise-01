@@ -2,14 +2,33 @@ import React, { Component } from 'react';
 import MainTitle from './MainTitle';
 import MainCounter from './MainCounter';
 import MainEventBind from './MainEventBind';
+import MainDataUp from './MainDataUp';
+
+import style from './Main.module.css';
 
 class Main extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      parentName: 'Parent',
+    };
+
+    this.greetParent = this.greetParent.bind(this);
+  }
+
+  greetParent(childName) {
+    const { key } = childName;
+    console.log(`Hello ${this.state.parentName} ${key}`);
+  }
+
   render() {
     return (
-      <div style={{ backgroundColor: 'blue' }}>
+      <div className={style['main-section']}>
         <MainTitle />
         <MainCounter />
         <MainEventBind />
+        <MainDataUp greet={this.greetParent} />
       </div>
     );
   }
