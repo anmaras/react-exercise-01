@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import MainTitle from './MainTitle';
 import MainCounter from './MainCounter';
+import MainEventBind from './MainEventBind';
 
 class Main extends Component {
   render() {
@@ -8,6 +9,7 @@ class Main extends Component {
       <div style={{ backgroundColor: 'blue' }}>
         <MainTitle />
         <MainCounter />
+        <MainEventBind />
       </div>
     );
   }
