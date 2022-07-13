@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import MainTitle from './MainTitle';
+import MainCounter from './MainCounter';
 
 class Main extends Component {
   render() {
     return (
       <div style={{ backgroundColor: 'blue' }}>
-        <MainTitle mainTitleText={this.props.main} />
+        <MainTitle />
+        <MainCounter />
       </div>
     );
   }

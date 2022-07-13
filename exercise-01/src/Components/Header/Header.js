@@ -5,7 +5,7 @@ class Header extends Component {
   render() {
     return (
       <div style={{ backgroundColor: 'red' }}>
-        <HeaderTitle titleText={this.props.header} />
+        <HeaderTitle />
       </div>
     );
   }

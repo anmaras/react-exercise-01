@@ -5,7 +5,7 @@ class Footer extends Component {
   render() {
     return (
       <div style={{ backgroundColor: 'green' }}>
-        <FooterTitle footerTitleText={this.props.footer} />
+        <FooterTitle />
       </div>
     );
   }

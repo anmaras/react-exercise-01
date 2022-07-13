@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class HeaderTitle extends Component {
   render() {
-    return <h1>{this.props.titleText}</h1>;
+    return <h1>React Exercise -01-</h1>;
   }
 }
 
