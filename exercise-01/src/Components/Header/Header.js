@@ -1,4 +1,11 @@
+import React, { Component } from 'react';
 import HeaderTitle from './HeaderTitle';
+
+// class Header extends Component {
+//   render() {
+//     return <HeaderTitle />;
+//   }
+// }
 
 const Header = () => {
   return (
