@@ -5,7 +5,7 @@ import MainEventBind from './MainEventBind';
 import MainDataUp from './MainDataUp';
 import MainConditionalRender from './MainConditionalRender';
 import MainListRendering from './MainListRendering';
-
+import MainForm from './MainForm';
 import style from './Main.module.css';
 
 class Main extends Component {
@@ -33,6 +33,7 @@ class Main extends Component {
         <MainDataUp greet={this.greetParent} />
         <MainConditionalRender />
         <MainListRendering />
+        <MainForm />
       </div>
     );
   }
