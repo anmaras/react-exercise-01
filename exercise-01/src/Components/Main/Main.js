@@ -4,6 +4,7 @@ import MainCounter from './MainCounter';
 import MainEventBind from './MainEventBind';
 import MainDataUp from './MainDataUp';
 import MainConditionalRender from './MainConditionalRender';
+import MainListRendering from './MainListRendering';
 
 import style from './Main.module.css';
 
@@ -31,6 +32,7 @@ class Main extends Component {
         <MainEventBind />
         <MainDataUp greet={this.greetParent} />
         <MainConditionalRender />
+        <MainListRendering />
       </div>
     );
   }
